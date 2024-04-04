@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	transition: 0.3s linear all;
+}
+
+input:valid ~ label,
+input:focus ~ label {
+	top: -1rem;
+	left: 0;
+	transform: none;
+	color: rgb(107, 33, 168);
+	font-size: small;
+}
+
+@keyframes fly {
+	from {
+		transform: translateX(15px) translateY(-15px);
+	}
+	to {
+		transform: translateX(-15px translateY(15px));
+	}
+}
+
+.animate-fly {
+    animation: fly .3s infinite alternate-reverse;
+}
