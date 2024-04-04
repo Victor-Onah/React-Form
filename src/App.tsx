@@ -20,7 +20,7 @@ function App() {
 					</p>
 					<p>The future is here.</p>
 				</aside>
-				<main className="relative flex-grow bg-gradient-to-b from-white to-purple-300 z-10 overflow-hidden">
+				<main className="relative flex-grow bg-gradient-to-b from-white to-purple-300 z-10 overflow-hidden flex items-center">
 					<img
 						className="absolute w-full bottom-0 opacity-15"
 						src={img2}
