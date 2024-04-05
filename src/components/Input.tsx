@@ -20,7 +20,7 @@ const Input = (
 		<div className="relative">
 			<input
 				id={props.id}
-				type={props.type}
+				type={isPasswordVisible ? "text" : props.type}
 				className="block w-full min-w-0 p-2 bg-purple-100 focus:border-b-2 valid:border-b-2 outline-none border-purple-800 text-purple-800"
 				required={props.required}
 				{...props.register(props.name, {
